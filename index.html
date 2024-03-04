@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Information</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Information</h1>
+      <button id="refreshBtn">Refresh</button>
+      <div>
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+          <option value="name">Name</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select>
+        <span id="sortLabel">Sorted by: Name</span>
+      </div>
+      <div>
+        <label for="filterInput">Filter:</label>
+        <input type="text" id="filterInput" />
+        <button id="clearFilterBtn">Clear</button>
+      </div>
+      <div id="userList"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
